@@ -94,7 +94,7 @@ keys.addEventListener("click", (e) => {
     }
     // Currently displayed number
     if (action === "calculate") {
-      const secondValue = displayedNum;
+      //const secondValue = displayedNum;
       // ...
     }
     // Get operator
@@ -158,9 +158,7 @@ keys.addEventListener("click", (e) => {
     if (action === "calculate") {
       const firstValue = calculator.dataset.firstValue;
       const operator = calculator.dataset.operator;
-      const secondValue = displayedNum;
-
-      display.textContent = calculate(firstValue, operator, secondValue);
+      display.textContent = calculate(firstValue, operator, displayedNum);
     }
     // Clear button
     if (action !== "clear") {
